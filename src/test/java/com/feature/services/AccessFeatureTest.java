@@ -11,19 +11,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
 @ExtendWith(MockitoExtension.class)
 public class AccessFeatureTest {
-
     @InjectMocks
     private AccessService accessService;
-
     @Mock
     private FeatureRepository featureRepository;
     @Mock
@@ -117,6 +112,9 @@ public class AccessFeatureTest {
 
     @BeforeEach
     public void setup(){
-        MockitoAnnotations.initMocks(this);
+        featureRepository = mock(FeatureRepository.class);
+        userRepository = mock(UserRepository.class);
+        accessEntityRepository = mock(AccessEntityRepository.class);
+        accessService = new AccessService(userRepository, featureRepository, accessEntityRepository);
     }
 }
