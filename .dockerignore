@@ -1,0 +1,41 @@
+# Exclude IDE-specific directories and files
+.idea/
+.vscode/
+*.iml
+
+# Exclude log files
+*.log
+
+# Exclude Docker-related files (if not needed in the image)
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# Exclude Maven wrapper files (useful if you're not using the wrapper)
+.mvn/
+mvnw
+mvnw.cmd
+.wrapper/
+
+# Exclude test files (if not needed in the image)
+src/test/
+
+# Exclude other unnecessary files and directories
+.git/
+.gradle/
+*.class
+*.jar
+*.war
+*.zip
+*.tar
+*.gz
+*.bz2
+*.rdb
+*.tmp
+*.swp
+*~
+
+# Exclude any sensitive or private configuration files
+application.properties
+application.yml
