@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class FeatureController {
-    private AccessService accessService;
+    private final AccessService accessService;
 
     @Autowired
     public FeatureController(AccessService accessService){

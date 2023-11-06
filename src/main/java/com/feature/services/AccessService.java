@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccessService {
 
-    private UserRepository userRepository;
-    private FeatureRepository featureRepository;
-    private AccessEntityRepository accessEntityRepository;
+    private final UserRepository userRepository;
+    private final FeatureRepository featureRepository;
+    private final AccessEntityRepository accessEntityRepository;
 
     @Autowired
     public AccessService(UserRepository userRepository, FeatureRepository featureRepository, AccessEntityRepository accessEntityRepository) {
