@@ -101,7 +101,7 @@ Access the monitoring services:
 
 - Prometheus: http://localhost:9090
 - Grafana: http://localhost:3000
-- AlertManager: http://localhost:9093/
+- AlertManager: http://localhost:9093/ (you need to provide valid chatId and bot token into alertmanager/config.yml)
 
 ## Stopping the Services
 To stop the services and remove the containers, run the following command in the repository directory:
