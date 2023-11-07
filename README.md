@@ -52,12 +52,12 @@ To get started with the Feature Switch Application, follow these steps:
 1. Clone this repository to your local machine:
 
     ```bash
-   git clone <repository-url>
+   git clone https://github.com/GurovaAnya/featureapp
 
 2. Navigate to the repository directory:
 
     ```bash
-    cd <repository-directory>
+    cd featureapp
 
 Replace <repository-directory> with the name of the directory where the repository was cloned. This is the directory where you'll find the project's files and Docker Compose configuration.
 
